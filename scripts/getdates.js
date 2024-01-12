@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obtén el elemento del primer párrafo del footer
     var copyrightParagraph = document.querySelector("footer p:first-child");
 
-    // Obtén el elemento del segundo párrafo del footer
+    // Obtén el elemento del segundo párrafo del footer por su ID
     var lastModifiedParagraph = document.getElementById("lastModified");
 
     // Obtén el año actual
@@ -17,5 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedDate = new Date(document.lastModified);
 
     // Establece el contenido del segundo párrafo con la fecha de última modificación
-    lastModifiedParagraph.innerHTML = "Last modified: " + lastModifiedDate;
+    lastModifiedParagraph.innerHTML = "Last modified: " + lastModifiedDate.toLocaleString();
 });
