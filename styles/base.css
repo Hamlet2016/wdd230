@@ -16,10 +16,14 @@ header {
 header img {
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
+    /* Añadido para redondear la imagen */
 }
 
 header h1 {
     color: white;
+    margin-top: 10px;
+    /* Añadido para dar espacio entre la imagen y el nombre */
 }
 
 nav {
@@ -30,6 +34,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    /* Quita los bullets de la lista de enlaces */
     padding: 0;
 }
 
@@ -39,14 +44,20 @@ nav li {
 }
 
 main {
-    text-align: center;
-    padding: 20px;
+    max-width: 800px;
+    /* Ajusta según sea necesario */
+    margin: 0 auto;
+    /* Centra el main horizontalmente */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Muestra las secciones en una sola columna */
+    gap: 20px;
+    /* Espaciado entre las secciones */
 }
 
 .card {
     background-color: white;
     border: 1px solid #ccc;
-    margin: 20px auto;
     padding: 20px;
     text-align: center;
 }
