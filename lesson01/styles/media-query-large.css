@@ -15,17 +15,12 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     section {
         padding: 1rem;
         background-color: #fff;
     }
-}
-
-main {
-    grid-template-columns: 1fr 1fr;
-}
 }
